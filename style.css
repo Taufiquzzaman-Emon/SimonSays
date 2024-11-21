@@ -1,0 +1,94 @@
+body{
+    text-align: center;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+    margin: 1.5rem;
+    animation: btnanm 1s ease-in forwards;  
+}
+
+@keyframes btnanm {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+h1{
+
+    animation: h1anm 0.5s ease-in forwards;  
+                
+}
+
+@keyframes h1anm {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+h2{
+ 
+    animation: h2anm 0.5s ease-in forwards;  
+             
+}
+@keyframes h2anm {
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.g1{
+    background: blue; 
+}
+.g2{
+    background: #455d7a; 
+}
+.g3{
+    background: red; 
+}
+.g4{
+    background: #240041;
+} 
+
+.flash{
+    background-color: white;
+}
+.userflash{
+    background: radial-gradient(circle at 10% 20%, rgb(0, 93, 133) 0%, rgb(0, 181, 149) 90%);
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  .flash-red-shaky {
+    background-color: red;
+    animation: shake 0.5s;
+  }
+  
